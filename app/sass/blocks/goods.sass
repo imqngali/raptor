@@ -1,0 +1,137 @@
+.goods
+
+    margin-top: 100px !important
+
+    &_inner
+
+    &_header
+
+        h2
+            font-size: 20px
+            font-weight: 700
+            color: #34A853
+
+        h1
+            font-family: Source Sans Pro
+            font-size: 44px
+            font-weight: 600
+            margin-top: 15px
+
+        div
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+
+            &>div:last-child
+                width: 150px
+
+            &>button
+                border: 1px solid #ff4b4b45
+                background: #ff4b4b45
+                padding: 13px 21px
+                border-radius: 50%
+                cursor: pointer
+
+    &_nav
+        display: flex
+        justify-content: space-between
+        margin-top: 20px
+        width: -webkit-fill-available
+        width: -moz-fill-available
+        margin-right: 50px
+
+        ul
+            display: flex
+            width: inherit
+            justify-content: space-between
+            padding: 0 !important
+
+        li>a
+            font-size: 18px
+            color: #1A0A03
+            opacity: .7
+            cursor: pointer
+
+        li.slick-active>a
+            color: #FF1717
+            font-weight: 700
+
+            &::after
+                content: ""
+                display: block
+                width: 35px
+                padding-top: 3px
+                border-bottom: 2px solid #FF1717
+
+            &:hover
+                color: #FF1717
+
+        li::marker 
+            display: none
+            width: 0
+            height: 0
+            content: ""
+
+
+    &_nav_item
+        font-size: 18px
+        font-weight: 700
+        color: #1A0A03
+
+    &_items
+        display: flex
+        justify-content: space-between
+        margin-top: 60px
+
+    &_item 
+        width: 263px
+        div:nth-child(1)
+            display: block
+            width: 100%
+            border: 1px solid #1A0A030D
+            border-radius: 10px
+            text-align: center
+            margin-top: 0 !important
+            height: 170px
+
+            img
+               display: block
+               width: fit-content
+               margin: 0 auto
+
+        div
+            width: 100%
+            display: flex
+            align-items: flex-start
+            margin-top: 6px
+
+            img
+                margin-right: 12px
+                padding-top: 5px
+            
+        h1
+            font-family: Source Sans
+            font-weight: 600
+            font-size: 22px
+            margin-top: 32px
+            color: #1A0A03
+
+        p 
+            font-size: 16px
+            color: #1A0A03
+            opacity: .8
+            max-width: 160px
+            margin-top: 5px
+
+        &>button
+            font-size: 16px
+            color: #fff
+            border: 1px solid #777777
+            background-color: #777777
+            padding: 15px 30px
+            border-radius: 5px
+            margin-top: 30px
+            margin-left: 10px
+
+
+

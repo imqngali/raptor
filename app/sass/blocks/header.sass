@@ -1,0 +1,115 @@
+header
+    background-image: url(../img/header_bg.png)
+    width: 100%
+    height: 650px
+    
+.header
+
+    &_inner 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 30px
+
+    &_logo
+        width: fit-content
+        height: fit-content
+        img
+            width: 100%
+            height: 100%
+    
+    &_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 50px
+
+        &-text
+            width: fit-content
+
+            h1
+                font-family: source sans-serif
+                font-size: 60px
+                font-weight: 600
+
+            h1:nth-child(2)
+                color: #34A853
+
+            p
+                font-size: 16px
+                color: #000000
+                font-weight: 400
+                max-width: 326px
+                opacity: .7
+                padding-top: 10px
+        
+        button
+            border: 1px solid #ff4b4b45
+            background: #ff4b4b45
+            padding: 17px 27px
+            border-radius: 50%
+            cursor: pointer
+
+    &_other
+        background-image: none !important
+        height: fit-content !important
+            
+
+
+.mainmenubtn
+    color: #000000
+    font-size: 16px
+    font-weight: 400
+    border: none
+    cursor: pointer
+    background: none
+    opacity: .7
+
+    &:focus
+        font-weight: 700
+        color: #FF1717 !important
+
+    &.active
+        font-weight: 700
+        color: #FF1717 !important
+        opacity: 1
+
+    &:hover
+        color: #000
+        opacity: 1
+  
+.dropdown 
+    position: relative
+    display: inline-block
+    margin-left: 50px
+
+.dropdown-child 
+    display: none
+    position: absolute
+    background-color: #fff
+    box-shadow: 2px 9px 4px rgba(0, 0, 0, 0.03)
+    width: 313px
+    padding: 24px 16px
+    z-index: 12212
+
+    div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 11px 0
+        width: 100%
+
+.dropdown-child a 
+    color: #1A0A03
+    text-decoration: none
+    display: block
+    font-size: 16px
+    font-weight: 400
+    opacity: .8
+
+    &:focus
+        font-weight: 700
+        color: #FF1717
+
+.dropdown:hover .dropdown-child 
+    display: block
