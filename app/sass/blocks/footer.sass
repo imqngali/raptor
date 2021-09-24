@@ -71,3 +71,32 @@ footer
         font-size: 16px
         color: #1A0A03
         opacity: .7
+
+
+@media (max-width: 768px)
+    .footer
+        &_inner
+            flex-direction: column
+
+        &_info
+            margin: 0 auto
+            text-align: center
+
+        &_social
+            text-align: center
+            display: block
+
+            a:last-child
+                margin-right: 0
+
+        &_menu
+            flex-direction: column
+            margin: 0 auto
+            margin-top: 30px
+
+            &>div
+                padding-left: 0
+                text-align: center
+
+            &>div:last-child
+                margin-top: 30px

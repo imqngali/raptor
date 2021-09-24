@@ -73,6 +73,8 @@
             height: 0
             content: ""
 
+    &_slider
+        overflow: hidden
 
     &_nav_item
         font-size: 18px
@@ -136,4 +138,35 @@
             margin-left: 10px
 
 
+
+@media (max-width: 768px)
+
+    .goods
+
+        &_header
+            &>div
+                display: block
+
+                &>div:last-child
+                    margin-top: 30px
+
+            &>h1
+                font-size: 28px
+
+        &_nav
+
+            &>ul
+                display: block
+            
+                &>li
+                    padding-top: 20px
+
+        &_item
+            width: unset
+            text-align: center
+
+            p
+                max-width: unset
+                margin: 0 auto
+                margin-top: 5px
 

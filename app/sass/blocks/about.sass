@@ -40,6 +40,8 @@
 
         img
             margin-top: 35px
+            width: 100%
+            height: 100%
 
     &_cards
         display: flex
@@ -70,6 +72,10 @@
                 opacity: .9
                 max-width: 261px
                 margin-top: 8px
+
+            img
+                width: 100%
+                height: 100%
 
     &_clients
         margin-top: 100px
@@ -135,3 +141,26 @@
     & .slick-slide
         height: 120px !important
 
+
+@media (max-width: 999px)
+    .about
+        h1
+            font-size: 30px
+            margin-bottom: 30px
+
+        &_items
+            flex-direction: column
+            margin-top: 60px
+
+        &_item
+            margin: 0 auto
+
+        &_tech
+            h2
+                font-size: 22px
+
+        &_card
+            flex-direction: column
+
+            h3
+                margin-top: 30px

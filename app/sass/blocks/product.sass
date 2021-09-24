@@ -169,3 +169,51 @@
                     span
                         font-size: 13px
                         color: #9A9A9A
+
+@media (max-width: 999px)
+    .product
+        h1
+            font-size: 30px
+            margin-bottom: 30px
+
+        &_info
+            flex-direction: column
+
+            &>div
+                width: 100% !important
+
+                span
+                    margin-top: 30px
+
+                &:last-child
+                    margin-top: 30px
+
+                    &>div
+                        margin-top: 30px
+
+        &_documentation
+            flex-direction: column
+
+            &>div
+                width: 100% !important
+
+                &:last-child
+                    margin-top: 30px
+
+        &_recommendation
+            &>div
+                &>div
+                    width: unset
+
+@media (max-width: 480px)
+
+    .product
+        p
+            font-size: 14px !important
+
+        a
+            font-size: 14px !important
+
+        h5
+            font-size: 18px
+

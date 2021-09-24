@@ -17,7 +17,19 @@ header
         img
             width: 100%
             height: 100%
+
+    &_slider_container
+        width: 80%
+
+    &_slider
+        overflow: hidden
+        &_item
+            justify-content: space-between
+            align-items: center
     
+    &_menu
+        display: flex
+
     &_content
         display: flex
         justify-content: space-between
@@ -42,6 +54,11 @@ header
                 max-width: 326px
                 opacity: .7
                 padding-top: 10px
+
+        &-image
+            img
+                width: 100%
+                height: 100%
         
         button
             border: 1px solid #ff4b4b45
@@ -80,7 +97,7 @@ header
   
 .dropdown 
     position: relative
-    display: inline-block
+    display: block
     margin-left: 50px
 
 .dropdown-child 
@@ -117,3 +134,49 @@ header
 
 .dropdown:hover .dropdown-child 
     display: block
+
+@media (max-width: 999px)
+
+    .mainmenubtn
+        font-size: 14px
+
+    .header 
+        &_content
+            &-text
+                margin-right: 30px
+                h1
+                    font-size: 50px
+
+
+@media (max-width: 768px)
+    .mainmenubtn
+        font-size: 24px
+
+    header
+        height: fit-content
+
+    .header 
+        &_other
+            background-image: url(../img/header_bg.png) !important
+
+        &_content
+            display: none
+
+        &_inner
+            flex-direction: column
+            align-items: unset
+
+        &_menu
+            display: block
+            padding-bottom: 50px
+
+            .dropdown
+                display: block
+                margin-top: 30px
+                margin-left: 0
+
+                &-child
+                    display: none !important
+
+            a
+                display: block

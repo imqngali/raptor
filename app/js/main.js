@@ -20,7 +20,21 @@ $(document).ready(function() {
         autoplay: true,
         slidesToScroll: 1,
         dots: false,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+        ]
     });
 
     $('.about_principles_slider').slick({
@@ -30,5 +44,14 @@ $(document).ready(function() {
         dots: false,
         prevArrow: $('.about_principles-prev'),
         nextArrow: $('.about_principles-next')
+    });
+
+    $('.header_slider').slick({
+        slidesToShow: 1,
+        autoplay: false,
+        dots: false,
+        infinite: false,
+        nextArrow: $('.header_next'),
+        prevArrow: false
     });
 });
