@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('.goods_slider').slick({
         slidesToShow: 1,
@@ -53,5 +52,9 @@ $(document).ready(function() {
         infinite: false,
         nextArrow: $('.header_next'),
         prevArrow: false
+    });
+
+    $('#goods_nav').click( function () {
+      $('.dropdown-child').toggleClass('active');
     });
 });

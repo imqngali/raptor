@@ -176,7 +176,14 @@ header
                 margin-left: 0
 
                 &-child
-                    display: block
+                    width: 100%
+
+                    &.active
+                        display: block !important
+                        
+                &:hover
+                    .dropdown-child
+                        display: none
 
             a
                 display: block
