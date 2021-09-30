@@ -41,6 +41,7 @@ $(document).ready(function() {
         autoplay: false,
         slidesToScroll: 1,
         dots: false,
+        infinite: false,
         prevArrow: $('.about_principles-prev'),
         nextArrow: $('.about_principles-next')
     });
