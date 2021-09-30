@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     $('.header_slider').slick({
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         dots: false,
         infinite: false,
         nextArrow: $('.header_next'),
