@@ -154,22 +154,32 @@ header
         font-size: 24px
 
     header
-        height: fit-content
+        height: 100px !important
 
     .header 
         &_other
             background-image: url(../img/header_bg.png) !important
+            height: 100px !important
 
         &_content
             display: none
 
         &_inner
-            flex-direction: column
-            align-items: unset
+            align-items: center
 
         &_menu
             display: block
-            padding-bottom: 50px
+            position: absolute
+            height: 100%
+            width: 100%
+            left: -500px
+            top: 0
+            z-index: 15
+            background-color: #fff
+            transition: all .5s ease-in-out
+            
+            &.active
+                left: 0
 
             .dropdown
                 display: block
@@ -188,3 +198,47 @@ header
 
             a
                 display: block
+
+.menu_burger
+    display: flex
+    position: relative
+    justify-content: center
+        
+    align-items: center
+    width: 80px
+    height: 40px
+    cursor: pointer
+    transition: all .5s ease-in-out
+    z-index: 30
+
+.menu_burger-open
+    width: 50px
+    height: 6px
+    background: #000
+    border-radius: 5px
+    transition: all .5s ease-in-out
+        
+.menu_burger-open::before,.menu_burger-open::after
+    content: ""
+    position: absolute
+    width: 50px
+    height: 6px
+    background:#000
+    border-radius: 5px
+    transition: all .5s ease-in-out
+        
+.menu_burger-open::before
+    transform: translateY(-16px)
+        
+.menu_burger-open::after
+    transform: translateY(16px)
+        
+.menu_burger.active .menu_burger-open
+    transform: translateX(-50px)
+    background: transparent
+        
+.menu_burger.active .menu_burger-open::before
+    transform: rotate(45deg) translate(35px, -35px)
+        
+.menu_burger.active .menu_burger-open::after
+    transform: rotate(-45deg) translate(35px, 35px)

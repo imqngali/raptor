@@ -50,7 +50,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         autoplay: true,
         dots: false,
-        infinite: false,
+        infinite: true,
         nextArrow: $('.header_next'),
         prevArrow: false
     });
@@ -58,4 +58,9 @@ $(document).ready(function() {
     $('#goods_nav').click( function () {
       $('.dropdown-child').toggleClass('active');
     });
+
+    $('.menu_burger').click(function(){
+      $('.menu_burger').toggleClass('active');
+      $('.header_menu').toggleClass('active');
+  });
 });
